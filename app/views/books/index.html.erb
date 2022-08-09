@@ -1,4 +1,8 @@
-
+<% if flash[:notice] %>
+ <p id="notice">
+   <%= flash[:notice] %>
+ </p>
+<% end %>
 
 <h1>Books</h1>
 <table>
@@ -35,7 +39,7 @@
 
 <h2>New Book</h2>
 
-<div class="error-message">
+<div id="error-message">
 <% if @book.errors.any? %>
   <%= @book.errors.count%>errors prohibited this book from being saved
   <ul>
