@@ -36,3 +36,7 @@ p {
 .field {
   display: block;
 }
+
+#notice {
+  color: green;
+}
