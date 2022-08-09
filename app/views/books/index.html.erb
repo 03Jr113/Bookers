@@ -1,3 +1,5 @@
+
+
 <h1>Books</h1>
 <table>
   <thead>
@@ -24,7 +26,7 @@
         <%= link_to 'Edit', edit_book_path(book.id) %>
       </th>
       <th>
-        <%= link_to 'Destroy', book_path(book.id), method: :delete %>
+        <%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
       </th>
     </tr>
     <% end %>
